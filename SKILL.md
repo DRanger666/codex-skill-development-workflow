@@ -1,6 +1,6 @@
 ---
 name: mpr-skill-development-workflow
-description: Use this provisional skill when creating, patching, staging, testing, reviewing, or promoting Codex skills according to the user's custom local standards on this machine.
+description: Use this skill when Codex skill work should follow the user's local development workflow on this machine: scope and boundary design, staged development outside CODEX_HOME, runtime-vs-development artifact placement, provisional installation decisions, behavioral testing, and evidence-driven patching.
 ---
 
 # MPR Skill Development Workflow
