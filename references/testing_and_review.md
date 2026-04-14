@@ -40,6 +40,16 @@ Prompt sets should vary:
 - boundary ambiguity
 - operational demands
 
+When bundling a starter harness with this meta skill, treat it as a reusable template rather than as a canonical runtime script.
+
+So the preferred placement is:
+
+- `assets/` for starter harnesses intended to be copied and adapted
+
+rather than:
+
+- `scripts/` for code the skill is expected to execute unchanged as part of its own runtime workflow
+
 ## Review Standard
 
 When reviewing results, do not default to binary pass/fail.

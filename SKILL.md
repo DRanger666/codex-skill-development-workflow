@@ -73,6 +73,10 @@ The actual working model is:
 9. test behavior with prompts, harnesses, and manual review
 10. patch from real failures
 
+This is a recurring loop, not a one-way sequence.
+
+The installed skill at any moment should be treated as the current best deployed revision, not as a permanently finished artifact.
+
 ## When To Use This Skill
 
 Use this skill when the user is doing any of the following:
@@ -148,11 +152,19 @@ Every skill draft should be treated as being in one of these states:
 - structurally valid
 - provisionally installed
 - behaviorally tested
-- refined
+- current installed revision
 
 If the skill is not behaviorally tested, say so plainly.
 
 If it is installed early for practical use, label it as provisional.
+
+Even a behaviorally tested installed skill may later re-enter the loop because of:
+
+- real failures
+- tool changes
+- Codex or MCP behavior changes
+- changing user needs
+- stronger competing local or public skills
 
 ### Phase 6. Validate And Test Appropriately
 

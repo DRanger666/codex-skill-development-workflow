@@ -8,6 +8,10 @@ Sometimes real failures will not surface until a skill is installed and starts s
 
 So provisional installation is a legitimate stage, not a mistake.
 
+It is also not a one-time exception to an otherwise terminal lifecycle.
+
+In this environment, provisional installation is one possible entry into a longer revision loop.
+
 ## When Provisional Installation Is Reasonable
 
 Provisional installation is appropriate when:
@@ -54,3 +58,34 @@ This keeps two truths visible at once:
 - the skill is still expected to change
 
 That honesty improves later patching because future sessions can recognize the installed skill as provisional rather than assuming it is already hardened.
+
+## Continuous Improvement Implication
+
+Provisional installation should be understood as:
+
+- one current revision entering normal use
+
+not as:
+
+- the last meaningful step before a fixed final version
+
+Later installed revisions may still go through:
+
+- `v2`
+- `v3`
+- later patch cycles
+
+for reasons such as:
+
+- real failures surfacing during use
+- changing Codex behavior
+- evolving MCP tools
+- new workflow needs
+- stronger competing solutions
+
+Even a later refined installed revision may re-enter the same loop.
+
+The important distinction is:
+
+- provisional labels early uncertainty honestly
+- continuous improvement remains possible for every later installed revision too
