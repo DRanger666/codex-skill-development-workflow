@@ -75,6 +75,11 @@ The installed copy under `CODEX_HOME` should contain runtime material only.
 
 Do not install development notes into `CODEX_HOME` just because they were useful while building the skill.
 
+Reusable testing scaffolds may live inside a runtime skill only when they support
+that skill's runtime job of helping design or scaffold testing. Keep
+skill-specific harnesses, test plans, run outputs, review notes, and patch
+records outside the runtime skill.
+
 ## Practical Placement Heuristic
 
 Ask:
