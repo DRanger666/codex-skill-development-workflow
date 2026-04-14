@@ -77,6 +77,26 @@ This is a recurring loop, not a one-way sequence.
 
 The installed skill at any moment should be treated as the current best deployed revision, not as a permanently finished artifact.
 
+This skill should also be treated as a hand-holding workflow, not as a rigid protocol.
+
+Its default sequence is the preferred route because it protects important outcomes such as:
+
+- proper staging
+- descriptive version history
+- clean runtime-vs-development artifact placement
+- explicit maturity labeling
+- meaningful testing and review
+- overall development hygiene
+
+But if the user intentionally takes a different coherent route, do not force the default sequence mechanically.
+
+Instead:
+
+- adapt to the route the user is actually taking
+- keep track of which protections or deliverables that route may skip
+- surface the tradeoffs explicitly
+- help the user recover missing safeguards where needed
+
 ## When To Use This Skill
 
 Use this skill when the user is doing any of the following:
@@ -104,6 +124,17 @@ First identify which kind of skill-development task is actually happening:
 - promotion into `CODEX_HOME`
 
 Do not jump straight into editing until that is clear.
+
+Also determine whether the user is already following a non-default but coherent route.
+
+If they are, do not snap back to the canonical flow automatically.
+
+Instead, identify:
+
+- which stage they are effectively in
+- which expected deliverables already exist
+- which expected deliverables are still missing
+- what risks or losses may follow if the current route continues unchanged
 
 ### Phase 2. Decide The Scope Boundary
 
@@ -196,11 +227,13 @@ Prefer patch-note driven refinement over vague “improve the skill” editing.
 When using this skill, produce:
 
 - a clear statement of the skill-development stage
+- a clear statement of whether the user is on the default route or a coherent alternative route
 - a clear scope and boundary decision
 - the correct artifact placement decision
 - a staged-draft or patch recommendation
 - an explicit maturity label such as `provisional` when appropriate
 - a testing and review recommendation proportionate to the skill's current state
+- explicit warnings about any missing safeguards or deliverables the current route may be skipping
 
 ## Anti-Patterns
 
@@ -211,5 +244,7 @@ Do not:
 - overfit to one session and present the result as mature
 - collapse related skills into one file when they own different operational surfaces
 - forbid all duplication even when one fact is needed for both readiness and diagnosis
+- force the canonical sequence mechanically when the user is already following a different but coherent route
+- fail to notice when the user's chosen route is skipping important protections such as staging, version history, testing, or hygiene
 - let harness output stand in for human review
 - pretend structural validation proves behavioral reliability
