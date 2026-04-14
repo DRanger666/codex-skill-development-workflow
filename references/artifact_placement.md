@@ -69,11 +69,28 @@ At the staging-repo or staging-directory level, it is appropriate to keep:
 
 That material explains the development surface, not the runtime skill behavior.
 
+A staging repo may be a clean, publishable, versioned development container.
+Messy transient notes, test outputs, review artifacts, and patch records often
+live outside that repo even when the skill itself is being actively developed.
+
+Two staging shapes are acceptable:
+
+- a repo that contains one or more skill folders
+- a repo whose root is the skill root
+
+Both preserve version history correctly. The important boundary is not the shape
+itself, but the distinction between the staged development container and the
+runtime skill package.
+
 ## Installed Skill Level
 
 The installed copy under `CODEX_HOME` should contain runtime material only.
 
 Do not install development notes into `CODEX_HOME` just because they were useful while building the skill.
+
+If repo root equals skill root, do not treat a naive repository archive as the
+runtime skill package. Install or export only the runtime subset and exclude
+repository metadata such as `.git`.
 
 Reusable testing scaffolds may live inside a runtime skill only when they support
 that skill's runtime job of helping design or scaffold testing. Keep
