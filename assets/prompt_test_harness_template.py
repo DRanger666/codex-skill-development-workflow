@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """
-Starter template for prompt-based Codex skill testing.
+Starter harness scaffold.
+
+This file is meant to be copied and adapted. The configured model,
+reasoning effort, sandbox mode, and approval mode are local starter
+defaults, not universal recommendations. Revisit them for the specific
+skill, environment, and test goal before relying on this harness.
 
 This file is a scaffold to copy and adapt for a specific skill or skill set.
 It is not meant to be executed unchanged as a canonical script for every skill.
