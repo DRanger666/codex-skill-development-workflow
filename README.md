@@ -3,6 +3,10 @@
 This repo contains a Codex skill I am building around the workflow I currently
 use to develop other skills.
 
+The public repo name is `codex-skill-development-workflow`, while the internal
+skill name is `codex-skill-development-local-workflow` to avoid confusion with
+more generic or system-level skill-creation helpers.
+
 That workflow is still evolving substantially. I do not think this is a final
 or complete answer to skill design. It is simply the structure I currently rely
 on for things like scope boundaries, staging, provisional installation,
