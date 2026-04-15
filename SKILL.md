@@ -110,7 +110,24 @@ Use this skill when the user is doing any of the following:
 - interpreting skill-test results
 - deciding whether a skill is only a draft, provisionally installable, or mature enough for promotion
 
-## Workflow
+## Operating Posture
+
+Use this skill as a consultation frame for skill-development work.
+
+Its job is to:
+
+- identify where the user is in the skill-development lifecycle
+- identify the real decision or problem being worked on
+- apply the relevant doctrine from this skill and its references
+- recommend the next concrete move
+- state what remains uncertain, user-owned, or still unvalidated
+
+Do not treat this as a rigid executor skill.
+
+Use the flow below as the default guidance path, while adapting when the user is
+already following a different coherent route.
+
+## Default Guidance Flow
 
 ### Phase 1. Resolve The Development Task
 
