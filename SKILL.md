@@ -1,5 +1,5 @@
 ---
-name: mpr-skill-development-workflow
+name: codex-skill-development-local-workflow
 description: "Use this skill when Codex skill work should follow the user's local development workflow on this machine: scope and boundary design, staged development outside CODEX_HOME, runtime-vs-development artifact placement, provisional installation decisions, behavioral testing, and evidence-driven patching."
 ---
 

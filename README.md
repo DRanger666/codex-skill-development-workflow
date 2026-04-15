@@ -1,4 +1,4 @@
-# mpr-skill-development-workflow
+# codex-skill-development-workflow
 
 This repo contains a Codex skill I am building around the workflow I currently
 use to develop other skills.
