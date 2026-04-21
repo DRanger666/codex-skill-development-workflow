@@ -111,6 +111,42 @@ In those cases, the test plan must include:
 - environment caveats
 - interpretation rules that separate setup failures from skill failures
 
+## Section-Level Semantic Audit
+
+When a skill has undergone iterative rewriting, scope broadening, boundary
+redesign, terminology cleanup, or movement of detail between `SKILL.md` and
+references, a section-level semantic audit may be useful.
+
+Use this pass when a section shows signs of:
+
+- repeated bullets or near-duplicate paraphrases
+- headings that may no longer match the content beneath them
+- transition language left behind from an earlier draft
+- stale assumptions from a narrower or older architecture
+- local incoherence inside a single file even when the high-level design is
+  improving
+
+During the audit, ask:
+
+- is this statement necessary at all
+- is the same idea already expressed elsewhere nearby or in a supporting file
+- is the duplication intentional and operationally useful, or accidental
+- does the current heading still describe the section truthfully
+- if this sentence is removed, do we lose decision-relevant information
+
+Do not turn this into blind compression.
+
+Preserve:
+
+- safety-relevant warnings
+- boundary-critical distinctions
+- handoff-critical repetition
+- deliberate duplication that remains necessary for readiness, diagnosis, or
+  first-contact guidance
+
+Treat this as a conditional refinement method, not as a universal required pass
+on every skill edit.
+
 ## Patch Loop
 
 After review:

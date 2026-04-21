@@ -267,6 +267,27 @@ When failures happen, write down:
 
 Prefer patch-note driven refinement over vague “improve the skill” editing.
 
+When a skill has gone through iterative rewriting, scope broadening, boundary
+redesign, or repeated movement of detail between `SKILL.md` and references,
+consider a section tightening pass.
+
+Use this as a conditional semantic audit, not as a mandatory compression pass
+for every edit.
+
+For the target section:
+
+- inspect each statement and ask whether it is necessary
+- ask whether the same idea is already expressed elsewhere in the same section,
+  file, or supporting reference
+- merge or remove accidental duplication
+- check whether the current heading still truthfully matches the section's
+  contents
+- check for stale assumptions, transition-language residue, and wording left
+  behind from earlier versions
+- preserve duplication that is operationally necessary
+- do not compress away information that changes decisions, boundaries, safety,
+  or handoff reliability
+
 ## Output Expectations
 
 When using this skill, produce:
