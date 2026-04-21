@@ -180,6 +180,17 @@ Runtime material belongs inside the skill folder.
 
 Development notes, testing plans, review notes, and patch notes should generally live outside the runtime skill folder.
 
+Do not stop the placement analysis at "inside skill" versus "outside skill."
+
+Also ask whether a file belongs:
+
+- at workspace level
+- in the staged repo
+- or only in the installed runtime package
+
+A file having some legitimate role somewhere does not automatically justify
+placing it in the staged repo.
+
 ### Phase 4. Stage Before Installing
 
 Develop the skill in a staged area before promoting it into `CODEX_HOME`.
@@ -187,8 +198,16 @@ Develop the skill in a staged area before promoting it into `CODEX_HOME`.
 The staged area should:
 
 - preserve descriptive git history
+- remain a clean, portable, public-facing development container
 - explain its relation to installed skills
 - keep the skill self-contained at runtime
+
+When deciding whether to keep a non-runtime file in the staged repo, ask:
+
+- does it materially support the skill's future development or maintenance
+- would it feel professionally appropriate in a public repo for this skill
+
+If not, keep it at workspace level instead.
 
 If a staged repo or directory does not exist yet, create one first rather than improvising directly in the installed skill location.
 

@@ -73,6 +73,34 @@ A staging repo may be a clean, publishable, versioned development container.
 Messy transient notes, test outputs, review artifacts, and patch records often
 live outside that repo even when the skill itself is being actively developed.
 
+The staged repo should be clean enough that it would not feel misplaced or
+embarrassing if pushed to a public GitHub repo for that skill.
+
+That means the question is not merely:
+
+- does this note have a legitimate role somewhere
+
+The real question is:
+
+- does this note belong inside the clean staged repo for this skill
+
+Some development artifacts are useful and legitimate but still belong outside
+the staged repo at workspace level.
+
+Examples that usually stay outside the staged repo:
+
+- session spawn notes
+- workspace-lineage artifacts
+- transient review scratch notes
+- patch-analysis notes tied to one local forked session
+
+Examples that may belong in the staged repo when kept clean:
+
+- a repo `README.md`
+- a short note explaining a critical design decision
+- a clearly written TODO or testing note that materially supports future skill
+  development
+
 Two staging shapes are acceptable:
 
 - a repo that contains one or more skill folders
@@ -110,6 +138,16 @@ If yes:
 If no, and the material is about designing, testing, or patching the skill itself:
 
 - it belongs outside
+
+If it belongs outside the runtime skill but is still under consideration for the
+staged repo, ask:
+
+- does it materially support the skill's professional development
+- would it feel at home in a clean public repo for this skill
+
+If not:
+
+- keep it outside the staged repo at workspace level
 
 ## Naming Direction
 
