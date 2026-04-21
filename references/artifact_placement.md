@@ -54,9 +54,17 @@ Keep development artifacts outside the skill when they are about:
 Appropriate locations include:
 
 - workspace development-note folders
-- staging-repo level notes
-- dedicated issue or patch-note folders
+- dedicated issue or patch-note folders, usually at workspace level
 - testing or validation directories
+- staging-repo level notes only when they are stable, clean, and appropriate to
+  the staged repo as a public-facing development container
+
+Do not read this list as meaning that patch-note folders and staged-repo notes
+are equally appropriate in the staged repo.
+
+Patch-analysis notes, fork-local review artifacts, and similar development
+materials should usually remain at workspace level unless they have been
+deliberately curated into clean repo-appropriate notes.
 
 ## Staging Repo Level
 
