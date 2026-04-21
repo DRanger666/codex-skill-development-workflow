@@ -110,6 +110,29 @@ Both preserve version history correctly. The important boundary is not the shape
 itself, but the distinction between the staged development container and the
 runtime skill package.
 
+## Portability Versus Relocation
+
+A good staged repo should be portable.
+
+That means it should remain clean and self-contained enough that moving it to a
+new parent workspace is feasible when hygiene requires it.
+
+But portability does not imply that relocation is always the right move.
+
+If the staged repo already lives under a stable, relevant parent workspace,
+keeping it there is a coherent route.
+
+Moving is preferred when the current parent directory is:
+
+- unrelated to the skill
+- misleading about the repo's purpose
+- transient enough to create future maintenance confusion
+
+So the rule is:
+
+- portability is a capability requirement
+- relocation is a situational hygiene decision
+
 ## Installed Skill Level
 
 The installed copy under `CODEX_HOME` should contain runtime material only.

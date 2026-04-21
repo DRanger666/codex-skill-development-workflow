@@ -209,6 +209,15 @@ When deciding whether to keep a non-runtime file in the staged repo, ask:
 
 If not, keep it at workspace level instead.
 
+Portability is a requirement for a good staged repo, but portability does not
+create an automatic duty to move it.
+
+If the staged repo already lives under a stable, relevant parent workspace,
+keeping it there is a coherent route.
+
+If it sits under an unrelated, misleading, or transient parent directory,
+moving it is preferred.
+
 If a staged repo or directory does not exist yet, create one first rather than improvising directly in the installed skill location.
 
 ### Phase 5. Mark Maturity Honestly
