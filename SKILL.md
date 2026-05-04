@@ -202,6 +202,8 @@ The staged area should:
 - explain its relation to installed skills
 - keep the skill self-contained at runtime
 
+Most skills should still be promoted as copied runtime packages under `CODEX_HOME`. For archive-native skills whose repo is part of the runtime boundary, a documented symlink installation may be a deliberate exception; check `references/provisional_installation.md` before using that route.
+
 When deciding whether to keep a non-runtime file in the staged repo, ask:
 
 - does it materially support the skill's future development or maintenance

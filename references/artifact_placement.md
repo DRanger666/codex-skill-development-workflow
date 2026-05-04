@@ -145,6 +145,8 @@ So the rule is:
 
 The installed copy under `CODEX_HOME` should contain runtime material only.
 
+The normal installed shape is a copied runtime package. A symlink from `CODEX_HOME/skills/<name>` to a staged or repo-local skill folder is a narrow archive-native exception, and should be used only when the repo itself is part of the runtime boundary.
+
 Do not install development notes into `CODEX_HOME` just because they were useful while building the skill.
 
 If repo root equals skill root, do not treat a naive repository archive as the

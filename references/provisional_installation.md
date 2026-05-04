@@ -50,6 +50,26 @@ The preferred order is:
 5. install into `CODEX_HOME`
 6. treat later failures as patch input, not as embarrassment
 
+## Archive-Native Symlink Exception
+
+The normal installation shape is a copied runtime package under `CODEX_HOME`.
+
+A symlink from `CODEX_HOME/skills/<name>` to a repo-local skill folder is an exception, not a shortcut. Use it only for archive-native skills where the repo is part of the runtime boundary: for example, when the skill depends on local archive indexes, source snapshots, recovered transcripts, large assets, or repo-pinned navigation that should not be duplicated into `CODEX_HOME`.
+
+Archive-native does not mean merely large, fast-moving, or inconvenient to copy.
+
+Before using this route, verify that:
+
+- the staged repo exists and preserves descriptive history
+- the symlink target is stable, intentional, and repo-local
+- the linked skill folder still exposes a clean runtime surface
+- copying would create stale duplicated archive state or broken references
+- the exception is documented in the relevant repo or workspace policy
+
+This exception does not permit skipping staging, validation, maturity labeling, or artifact hygiene. It also does not permit development notes, patch logs, test output, or scratch material to become runtime material.
+
+When an archive-native skill matures, reassess whether a copied runtime package has become practical. If the symlink remains the right shape, treat the target repo commit as the deployed revision when precise reproducibility matters.
+
 ## Why This Matters
 
 This keeps two truths visible at once:
